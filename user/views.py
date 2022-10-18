@@ -11,6 +11,11 @@ def signup(request):
             return redirect('/')
         else:
             return render(request, 'user/signup.html')
+        
+    if request.method == 'POST':
+        username = request.POST.get('username', '')
+        password = request.POST.get('password', '')
+        password2 = request.POST.get('password2', '')
 
 def signin(request):
     if request.method == "GET":
