@@ -4,6 +4,14 @@ from .models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 
+def signup(request):
+    if request.method == 'GET':
+        user = request.user.is_authenticated # 로그인 된 사용자가 요청하는지 검사
+        if user: # 로그인 되어있다면
+            return redirect('/')
+        else:
+            return render(request, 'user/signup.html')
+
 def signin(request):
     if request.method == "GET":
         user = request.user.is_authenticated
