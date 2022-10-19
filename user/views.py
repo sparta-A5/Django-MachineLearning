@@ -16,6 +16,14 @@ def signup(request):
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
         password2 = request.POST.get('password2', '')
+        
+        if password != password2:
+            # 패스워드가 다르다는 에러 {'error':'에러문구'} 를 만들어서 전달
+            return render(request, 'user/signup.html', {'error': '패스워드를 확인 해 주세요!'})
+        else:
+            if username == '' or password == '':
+            # 사용자 저장을 위한 username과 password가 필수라는 것을 얘기 해 줍니다.
+                return render(request, 'user/signup.html', {'error': '사용자 이름과 패스워드는 필수 값 입니다'})
 
 def signin(request):
     if request.method == "GET":
