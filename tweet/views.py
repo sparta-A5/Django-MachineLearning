@@ -1,11 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Image
 
-# Create your views here.
 def img_list(request):
     if request.method == "GET":
-        image = Image.objects.all()
-        return render(request, "tweet/upload-file.html", {'image': image})
+        user = request.user.is_authenticated
+        if user:#로그인이 되어 있다면
+            return render(request,'tweet/upload-file.html')
+        else:#로그인이 안되어 있다면
+            return redirect('/signin')
     if request.method == "POST":
 
         fileTitle = request.POST["fileTitle"]
