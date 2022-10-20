@@ -19,7 +19,13 @@ def img_list(request):
         )
         document.save()
         documents = Image.objects.all()
+        
+        return redirect('tweet/')
 
-        return render(request, "tweet/upload-file.html",context = {
-        "files": documents
-    })
+def result(request):
+    if request.method == "GET":
+        user = request.user.is_authenticated
+        if user:#로그인이 되어 있다면
+            return render(request,'tweet/result.html')
+        else:#로그인이 안되어 있다면
+            return redirect('/signin')

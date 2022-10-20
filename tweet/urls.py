@@ -7,10 +7,6 @@ app_name = "tweet"
 
 urlpatterns = [
     path("", views.img_list, name = "img_list"),
+    path("tweet/", views.result),
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL,
-        document_root = settings.MEDIA_ROOT
-    )
