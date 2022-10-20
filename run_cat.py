@@ -36,4 +36,4 @@ for i in range(12):
         plt.title('This cat is : %s' % (dict[i]))
         plt.imshow(test_imgs[0])
         plt.savefig('result.png')
-        # plt.show() 
+        # plt.show()
