@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+이미지 업로드
+{% endblock %}
+{% block content %}
+<div class="border_feed_box" style="padding: 20px;">
+    <form action="{% url 'tweet:img_list' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3" style="margin-top: 20px; margin-bottom: 20px;">
+            <label for=" exampleFormControlTextarea1 " class=" form-label" style="font-weight: normal"> {{ user }}님,
+                📷사진을 선택하세요 </label>
+        </div>
+        <label for="imgs" class="form-label" style="font-weight:bold; margin-top: 20px; margin-bottom: 10px;">
+        </label>
+        <input type="text" name="fileTitle" placeholder="Enter a title">
+        <input type="file" name="uploadedFile">
+
+        <button type="submit" class="btn btn-outline-dark" class="post_btn">Upload</button>
+    </form>
+</div>
+<hr>
+
+{% for file in files %}
+<div class="border_feed_box" style="padding: 20px;">
+    <div class="feed_like">
+        <p class="feed_txt"><b>Title {{ file.title }}</b></p>
+        <img class="feed_img" src='{{ file.image.url }}'><br>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
