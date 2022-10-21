@@ -74,18 +74,18 @@ https://user-images.githubusercontent.com/113073514/197098229-e7a0160c-284f-47e2
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/chorimgenius">
+      <a href="https://github.com/Naerumii">
         <sub><b>이효정</b></sub></a><br />
         <sub><b>Developer</b></sub></a><br />
         <sub><b>Team Leader</b></sub></a><br />
-        <a href="https://github.com/chorimgenius" title="Code">🌱</a>
+        <a href="https://github.com/Naerumii" title="Code">🌱</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Naerumii">
+      <a href="https://github.com/chorimgenius">
         <sub><b>염보미</b></sub></a><br />
         <sub><b>Developer</b></sub></a><br />
    <sub><b></b></sub></a><br />
-        <a href="https://github.com/Naerumii" title="Code">🌱</a>
+        <a href="https://github.com/chorimgenius" title="Code">🌱</a>
     </td>
     <td align="center">
       <a href="https://github.com/Choding91">
