@@ -118,17 +118,22 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR/'static',]
+# static 연결 및 경로 설정
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 AUTH_USER_MODEL = 'user.User'
 
+# url 이미지 연결 및 경로 설정
 MEDIA_URL = '/upload/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload')
+
+# 세션 유지 시간
+SESSION_COOKIE_AGE = 600 # set just 10 seconds to test
+# 리퀘스트 발생 시 세션 초기화
+SESSION_SAVE_EVERY_REQUEST = True
