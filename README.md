@@ -1,6 +1,10 @@
 # Django-MachineLearning
 캣츠아이 🐱 : 머신러닝 기능을 활용해 고양이의 품종을 한번에 캐치하겠다는 의미
 
+## 추가 다운로드
+- 모델이 용량이 큰 관계로 github에 올리지 못했습니다. 프로젝트 파일 최상단에 다운로드 받아주세요.
+- [model.h5 다운로드](https://drive.google.com/file/d/15iwIXsNFC3194ihUn8o9kdJruC-NKz-W/view?usp=sharing)
+
 ## 프로젝트 목표
 
 - 머신러닝과 django를 접목하여 이미지를 분류하는 웹 사이트를 구현하기
