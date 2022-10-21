@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+이미지 업로드
+{% endblock %}
+{% block content %}
+<div class="border_feed_box" style="padding: 20px;">
+    <form action="{% url 'tweet:img_list' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3" style="margin-top: 20px; margin-bottom: 20px;">
+            <label for=" exampleFormControlTextarea1 " class=" form-label" style="font-weight: normal"> <b>{{ user }}</b>님,
+                품종이 궁금한 고양이 📷을 넣어주세요!</label>
+        </div>
+        <label for="imgs" class="form-label" style="font-weight:bold; margin-top: 20px; margin-bottom: 10px;">
+        </label>
+        <!-- fileTitle 없으면 문제 발생 > hidden 으로 숨겨둠-->
+        <input type="hidden" name="fileTitle" placeholder="Enter a title">
+        <input type="file" name="uploadedFile">
+        
+        <!-- class 중복으로 인한 삭제 -->
+        <button type="submit" class="btn btn-outline-dark">Upload</button>
+    </form>
+</div>
+<hr>
+
+<!-- 최대 1장만 보여지도록 slice 추가 -->
+{% for file in files|slice:":1" %}
+<div class="border_feed_box" style="padding: 20px;">
+    <div class="feed_like">
+        <p class="feed_txt">🐱 <b><a href="pumjong">품종 확인</a></b> 🐱</p>
+        <img class="feed_img" src={{ file.image.url }}><br>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
