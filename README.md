@@ -1,3 +1,5 @@
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Cat's%20Eye&fontSize=90)
+
 # Django-MachineLearning
 캣츠아이 🐱 : 머신러닝 기능을 활용해 고양이의 품종을 한번에 캐치하겠다는 의미
 
@@ -53,12 +55,12 @@
 
 ### 장고 파트
 
-### 이미지 업로드
+#### 이미지 업로드
 
 - 메인화면에서 이미지 업로드가 가능하도록 기능 구현
 - 이미지를 업로드하면 이동한 페이지에서 해당 이미지에 대한 결과 출력
 
-### 회원가입/로그인/로그아웃
+#### 회원가입/로그인/로그아웃
 
 - 회원기능을 추가하여 로그인한 사용자만 서비스를 이용 가능하도록 구현
 - 회원가입/로그인 시 발생할 수 있는 오류에 대해 오류메세지 출력
@@ -66,3 +68,45 @@
 ## 시연 영상
 
 https://user-images.githubusercontent.com/113073514/197098229-e7a0160c-284f-47e2-b703-c88975d85c97.mp4
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/chorimgenius">
+        <sub><b>이효정</b></sub></a><br />
+        <sub><b>Developer</b></sub></a><br />
+        <sub><b>Team Leader</b></sub></a><br />
+        <a href="https://github.com/chorimgenius" title="Code">🌱</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Naerumii">
+        <sub><b>염보미</b></sub></a><br />
+        <sub><b>Developer</b></sub></a><br />
+   <sub><b></b></sub></a><br />
+        <a href="https://github.com/Naerumii" title="Code">🌱</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Choding91">
+        <sub><b>조인걸</b></sub></a><br />
+        <sub><b>Developer</b></sub></a><br />    
+   <sub><b></b></sub></a><br />
+        <a href="https://github.com/Choding91" title="Code">🌱</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ja2w0nii">
+        <sub><b>김재원</b></sub></a><br />
+        <sub><b>Developer</b></sub></a><br />    
+   <sub><b></b></sub></a><br />
+        <a href="https://github.com/ja2w0nii" title="Code">🌱</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jjiwon22">
+        <sub><b>최지원</b></sub></a><br />
+        <sub><b>Developer</b></sub></a><br />    
+   <sub><b></b></sub></a><br />
+        <a href="https://github.com/jjiwon22" title="Code">🌱</a>
+    </td>
+  </tr>
+</table>
